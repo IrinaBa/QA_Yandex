@@ -29,7 +29,7 @@ public class SearchItemTest {
         switchToNextTab(1);
         wd.findElement(By.xpath("//span[contains(text(),'Экспресс')]")).click();
 
-        //wd.findElement(By.xpath("//span[contains(text(),'Электроника')]")).click();
+        wd.findElement(By.xpath("//a[contains(text(),'Электроника')]")).click();
 
         wd.findElement(By.xpath("//a[contains(text(),'Смартфоны и аксессуары')]")).click();
 
