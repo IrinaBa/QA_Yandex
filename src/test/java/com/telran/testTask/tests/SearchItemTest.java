@@ -11,6 +11,7 @@ public class SearchItemTest extends TestBase {
     @Test
     public void searchItemTest() {
         app.getFirstPageHelper().selectMarket();
+        app.getFirstPageHelper().switchToNextTab(1);
         app.getSelectCategoryHelper().selectDepartment("Экспресс");
         app.getFirstPageHelper().acceptCookies();
         app.getSelectCategoryHelper().selectCatalog("Электроника");
