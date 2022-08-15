@@ -1,0 +1,49 @@
+package com.telran.testTask.fm;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.concurrent.TimeUnit;
+
+public class ApplicationManager {
+    WebDriver wd;
+
+    ItemHelper itemHelper;
+    HeaderHelper headerHelper;
+    FirstPageHelper firstPageHelper;
+    SelectCategoryHelper selectCategoryHelper;
+
+
+    public void init() {
+        wd = new ChromeDriver();
+        wd.navigate().to("https://yandex.ru/");
+        wd.manage().window().maximize();
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        itemHelper = new ItemHelper(wd);
+        headerHelper = new HeaderHelper(wd);
+        firstPageHelper = new FirstPageHelper(wd);
+        selectCategoryHelper = new SelectCategoryHelper(wd);
+    }
+
+    public ItemHelper getItemHelper() {
+        return itemHelper;
+    }
+
+    public HeaderHelper getHeaderHelper() {
+        return headerHelper;
+    }
+
+    public FirstPageHelper getFirstPageHelper() {
+        return firstPageHelper;
+    }
+
+    public SelectCategoryHelper getSelectCategoryHelper() {
+        return selectCategoryHelper;
+    }
+
+    public void stop() {
+        wd.quit();
+
+    }
+}
