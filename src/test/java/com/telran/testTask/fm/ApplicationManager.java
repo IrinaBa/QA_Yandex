@@ -1,12 +1,15 @@
 package com.telran.testTask.fm;
 
+import com.telran.testTask.utils.MyListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    WebDriver wd;
+   // WebDriver wd;
+    EventFiringWebDriver wd;
 
     ItemHelper itemHelper;
     HeaderHelper headerHelper;
@@ -15,7 +18,8 @@ public class ApplicationManager {
 
 
     public void init() {
-        wd = new ChromeDriver();
+       // wd = new ChromeDriver();
+        wd = new EventFiringWebDriver(new ChromeDriver());
         wd.navigate().to("https://yandex.ru/");
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -24,6 +28,8 @@ public class ApplicationManager {
         headerHelper = new HeaderHelper(wd);
         firstPageHelper = new FirstPageHelper(wd);
         selectCategoryHelper = new SelectCategoryHelper(wd);
+
+        wd.register(new MyListener());
     }
 
     public ItemHelper getItemHelper() {

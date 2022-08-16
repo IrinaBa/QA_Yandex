@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">10.681s</div>
+<div class="counter">1m27.60s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,98 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
 <a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="searchItemTest"></a>
-<h3 class="failures">searchItemTest</h3>
-<span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),'Экспресс')]&quot;}
-  (Session info: chrome=103.0.5060.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WIN-J9DN6SMD2A2', ip: '192.168.178.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61965}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3ecb6bebe5861e8a41f7653fc6213243
-*** Element info: {Using=xpath, value=//span[contains(text(),'Экспресс')]}
-	at java.base@11.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@11.0.13/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at app//org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at app//org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at app//com.telran.testTask.fm.HelperBase.click(HelperBase.java:34)
-	at app//com.telran.testTask.fm.SelectCategoryHelper.selectDepartment(SelectCategoryHelper.java:20)
-	at app//com.telran.testTask.tests.SearchItemTest.searchItemTest(SearchItemTest.java:14)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at app//org.testng.TestRunner.run(TestRunner.java:601)
-	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at app//org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at app//org.testng.TestNG.runSuites(TestNG.java:1099)
-	at app//org.testng.TestNG.run(TestNG.java:1067)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -163,20 +81,65 @@ Session ID: 3ecb6bebe5861e8a41f7653fc6213243
 </tr>
 </thead>
 <tr>
-<td class="failures">searchItemTest</td>
-<td class="failures">10.681s</td>
-<td class="failures">failed</td>
+<td class="success">searchItemTest</td>
+<td class="success">1m27.60s</td>
+<td class="success">passed</td>
 </tr>
 </table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>12:43:09.331 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: [data-id='market']
+12:43:09.588 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: [data-id='market'] found
+12:43:10.460 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.xpath: //span[contains(text(),'Экспресс')]
+12:43:16.286 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.xpath: //span[contains(text(),'Экспресс')] found
+12:43:19.416 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: [data-id='button-all']
+12:43:19.570 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: [data-id='button-all'] found
+12:43:19.695 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.xpath: //a[contains(text(),'Электроника')]
+12:43:19.739 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.xpath: //a[contains(text(),'Электроника')] found
+12:43:25.348 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.xpath: //a[contains(text(),'Смартфоны и аксессуары')]
+12:43:25.817 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.xpath: //a[contains(text(),'Смартфоны и аксессуары')] found
+12:43:33.095 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(1) ._3qxDp
+12:43:33.332 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(1) ._3qxDp found
+12:43:33.749 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(1) ._3qxDp
+12:43:33.798 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(1) ._3qxDp found
+12:43:33.918 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(1) ._3qxDp
+12:43:33.945 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(1) ._3qxDp found
+12:43:34.500 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(2) ._3qxDp
+12:43:34.556 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(2) ._3qxDp found
+12:43:34.696 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(2) ._3qxDp
+12:43:34.723 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(2) ._3qxDp found
+12:43:34.808 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(2) ._3qxDp
+12:43:34.834 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(2) ._3qxDp found
+12:43:35.336 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.xpath: //span[text()='Apple']
+12:43:35.387 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.xpath: //span[text()='Apple'] found
+12:44:05.692 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: div:nth-child(3) ._2UHry
+12:44:05.728 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: div:nth-child(3) ._2UHry found
+Беспроводные наушники Apple AirPods 3 RU, белый
+12:44:05.770 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.id: header-search
+12:44:05.790 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.id: header-search found
+12:44:06.008 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.id: header-search
+12:44:06.066 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.id: header-search found
+12:44:06.135 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.id: header-search
+12:44:06.167 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.id: header-search found
+12:44:06.620 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: [data-r='search-button']
+12:44:06.655 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: [data-r='search-button'] found
+12:44:36.800 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: div:nth-child(2) ._2UHry
+12:44:36.837 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: div:nth-child(2) ._2UHry found
+Беспроводные наушники Apple AirPods 3 RU, белый
+</pre>
+</span>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 48720
+<pre>Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 3629
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-авг. 15, 2022 1:54:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1660646581.604][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.
+авг. 16, 2022 12:43:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -189,7 +152,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 15 авг. 2022 г., 13:54:49</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 16 авг. 2022 г., 12:44:38</p>
 </div>
 </div>
 </body>
