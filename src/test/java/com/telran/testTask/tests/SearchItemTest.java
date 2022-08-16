@@ -19,12 +19,12 @@ public class SearchItemTest extends TestBase {
         app.getItemHelper().filterItem(new Item().setPriceFrom("20000")
                 .setPriceTo("35000")
                 .setBrand("Apple"));
-        app.getHeaderHelper().pause(30000);
+        app.getHeaderHelper().pause(40000);
         String itemName = app.getItemHelper().getItemNameFromListByNumber(3);
         // pause(10000);
         System.out.println(itemName);
         app.getHeaderHelper().typeInSearchInputField(itemName);
-        app.getFirstPageHelper().pause(30000);
+        app.getFirstPageHelper().pause(40000);
         String foundItemName = app.getItemHelper().getItemNameFromListByNumber(2);
         System.out.println(foundItemName);
         Assert.assertEquals(foundItemName, itemName);
