@@ -21,9 +21,9 @@ dependencies {
     implementation 'ch.qos.logback:logback-classic:1.2.11'
 }
 
-test {
-    useTestNG()
-}
+//test {
+  //  useTestNG()
+//}
 task testUser(type: Test) {
     useTestNG() {
         suites 'src/test/resources/testng.xml'
