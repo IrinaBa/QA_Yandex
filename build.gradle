@@ -24,7 +24,7 @@ dependencies {
 //test {
   //  useTestNG()
 //}
-task testUser(type: Test) {
+task testApple(type: Test) {
     useTestNG() {
         suites 'src/test/resources/testng.xml'
     }
