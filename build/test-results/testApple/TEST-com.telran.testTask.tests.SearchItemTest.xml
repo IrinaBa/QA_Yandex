@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.testTask.tests.SearchItemTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-08-17T11:55:16" hostname="WIN-J9DN6SMD2A2" time="84.405">
+  <properties/>
+  <testcase name="searchItemTest" classname="com.telran.testTask.tests.SearchItemTest" time="84.405">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div:nth-child(2) ._2UHry&quot;}&#10;  (Session info: chrome=104.0.5112.81)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'WIN-J9DN6SMD2A2', ip: '192.168.178.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 912ced8a376b627e97c928013694c923&#10;*** Element info: {Using=css selector, value=div:nth-child(2) ._2UHry}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div:nth-child(2) ._2UHry&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-J9DN6SMD2A2', ip: '192.168.178.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 912ced8a376b627e97c928013694c923
+*** Element info: {Using=css selector, value=div:nth-child(2) ._2UHry}
+	at app//com.telran.testTask.utils.MyListener.onException(MyListener.java:35)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.15/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at app//com.sun.proxy.$Proxy10.onException(Unknown Source)
+	at app//org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at app//com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at app//org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at app//com.telran.testTask.fm.ItemHelper.getItemNameFromListByNumber(ItemHelper.java:15)
+	at app//com.telran.testTask.tests.SearchItemTest.searchItemTest(SearchItemTest.java:28)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.15/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.15/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at app//org.testng.TestRunner.run(TestRunner.java:601)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1099)
+	at app//org.testng.TestNG.run(TestNG.java:1067)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.15/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.15/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.15/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[13:55:16.375 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: [data-id='market']
+13:55:16.573 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: [data-id='market'] found
+13:55:18.038 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.xpath: //span[contains(text(),'Экспресс')]
+13:55:25.218 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.xpath: //span[contains(text(),'Экспресс')] found
+13:55:28.877 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: [data-id='button-all']
+13:55:29.071 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: [data-id='button-all'] found
+13:55:29.244 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.xpath: //a[contains(text(),'Электроника')]
+13:55:29.373 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.xpath: //a[contains(text(),'Электроника')] found
+13:55:35.413 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.xpath: //a[contains(text(),'Смартфоны и аксессуары')]
+13:55:35.889 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.xpath: //a[contains(text(),'Смартфоны и аксессуары')] found
+13:55:43.283 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(1) ._3qxDp
+13:55:43.999 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(1) ._3qxDp found
+13:55:44.658 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(1) ._3qxDp
+13:55:44.740 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(1) ._3qxDp found
+13:55:44.812 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(1) ._3qxDp
+13:55:44.891 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(1) ._3qxDp found
+13:55:45.777 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(2) ._3qxDp
+13:55:45.834 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(2) ._3qxDp found
+13:55:45.969 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(2) ._3qxDp
+13:55:45.993 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(2) ._3qxDp found
+13:55:46.062 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: ._1heDd:nth-child(2) ._3qxDp
+13:55:46.106 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: ._1heDd:nth-child(2) ._3qxDp found
+13:55:46.693 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.xpath: //span[text()='Apple']
+13:55:46.758 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.xpath: //span[text()='Apple'] found
+13:55:57.009 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: div:nth-child(3) ._2UHry
+13:55:57.027 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: div:nth-child(3) ._2UHry found
+Умные часы Apple Watch Series 7 41 мм Aluminium Case, синий омут
+13:55:57.064 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.id: header-search
+13:55:57.082 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.id: header-search found
+13:55:57.386 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.id: header-search
+13:55:57.436 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.id: header-search found
+13:55:57.582 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.id: header-search
+13:55:57.607 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.id: header-search found
+13:55:58.026 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: [data-r='search-button']
+13:55:58.076 [Test worker] INFO  com.telran.testTask.utils.MyListener - By.cssSelector: [data-r='search-button'] found
+13:56:28.302 [Test worker] INFO  com.telran.testTask.utils.MyListener - Start search By.cssSelector: div:nth-child(2) ._2UHry
+13:56:38.746 [Test worker] INFO  com.telran.testTask.utils.MyListener - We have a throwable--> no such element: Unable to locate element: {"method":"css selector","selector":"div:nth-child(2) ._2UHry"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-J9DN6SMD2A2', ip: '192.168.178.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 912ced8a376b627e97c928013694c923
+*** Element info: {Using=css selector, value=div:nth-child(2) ._2UHry}
+13:56:38.747 [Test worker] INFO  com.telran.testTask.utils.MyListener - We have a throwable--> no such element: Unable to locate element: {"method":"css selector","selector":"div:nth-child(2) ._2UHry"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-J9DN6SMD2A2', ip: '192.168.178.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 912ced8a376b627e97c928013694c923
+*** Element info: {Using=css selector, value=div:nth-child(2) ._2UHry}
+13:56:38.751 [Test worker] INFO  com.telran.testTask.utils.MyListener - We have a throwable--> org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div:nth-child(2) ._2UHry"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-J9DN6SMD2A2', ip: '192.168.178.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 912ced8a376b627e97c928013694c923
+*** Element info: {Using=css selector, value=div:nth-child(2) ._2UHry}
+13:56:40.774 [Test worker] INFO  com.telran.testTask.utils.MyListener - This is link with error /screenshots/screen3398.png
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 44091
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 17, 2022 1:55:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+java.io.FileNotFoundException: \screenshots\screen3398.png (Системе не удается найти указанный путь)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:192)
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:180)
+	at com.google.common.io.ByteSource.copyTo(ByteSource.java:268)
+	at com.google.common.io.Files.copy(Files.java:319)
+	at com.telran.testTask.fm.HelperBase.takeScreenshot(HelperBase.java:57)
+	at com.telran.testTask.utils.MyListener.onException(MyListener.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy10.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.telran.testTask.fm.ItemHelper.getItemNameFromListByNumber(ItemHelper.java:15)
+	at com.telran.testTask.tests.SearchItemTest.searchItemTest(SearchItemTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+]]></system-err>
+</testsuite>
